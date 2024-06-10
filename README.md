@@ -20,28 +20,33 @@ The version of Python and major packages needed to run the code:
 #### 1. Mixed Arity Knowledge Hypergraph
 ```
 ## JF17K dataset
-python main-JF17K.py --dataset JF17K --batch_size 384 --lr 0.00095 --dr 0.993 --input_drop 0.3 --dropout 0.9 --dropout_3d 0.5 --padding 1
+python main-JF.py --dataset JF17K --batch_size 128 --lr 0.1 --dr 0.1 --input_drop 0.1 --hidden_drop 0.1 --feature_drop 0.1 --k_size 1 --k_sizeN 2 --dil_size 2 --dil_sizeN 2
 
 ## WikiPeople dataset
-python main-WikiPeople.py --dataset WikiPeople --batch_size 384 --lr 0.00035 --dr 0.993 --input_drop 0.3 --dropout 0.5 --dropout_3d 0.6 --padding 5
+python main-WP.py --dataset WikiPeople --batch_size 128 --lr 0.1 --dr 0.1 --input_drop 0.1 --hidden_drop 0.1 --feature_drop 0.1 --k_size 1 --k_sizeN 2 --dil_size 2 --dil_sizeN 2
 
 ## FB-AUTO dataset
-python main-FB-AUTO.py --dataset FB-AUTO --batch_size 64 --lr 0.00099 --dr 0.968 --input_drop 0.5 --dropout 0.5 --dropout_3d 0.5 --padding 3
+python main-FB.py --dataset FB-AUTO --batch_size 128 --lr 0.1 --dr 0.1 --input_drop 0.1 --hidden_drop 0.1 --feature_drop 0.1 --k_size 1 --k_sizeN 2 --dil_size 2 --dil_sizeN 2
+
+## M-FB15K dataset
+python main-MK.py --dataset M-FB15K --batch_size 128 --lr 0.1 --dr 0.1 --input_drop 0.1 --hidden_drop 0.1 --feature_drop 0.1 --k_size 1 --k_sizeN 2 --dil_size 2 --dil_sizeN 2
 ```
+
+
 
 #### 2. Fixed Arity Knowledge Hypergraph
 ```
 ## JF17K-3 dataset
-python main-fixed3.py --dataset JF17K-3 --batch_size 384 --lr 0.00049 --dr 0.995 --input_drop 0.9 --dropout 0 --dropout_3d 0.9 --padding 5
+python main-fixed3.py --dataset JF17K-3 --batch_size 128 --lr 0.1 --dr 0.1 --input_drop 0.1 --hidden_drop 0.1 --feature_drop 0.1 --k_size 1 --k_sizeN 2 --dil_size 2 --dil_sizeN 2
 
 ## JF17K-4 dataset
-python main-fixed4.py --dataset JF17K-4 --batch_size 128 --lr 0.00062 --dr 0.978 --input_drop 0.9 --dropout 0.9 --dropout_3d 0 --padding 1
+python main-fixed4.py --dataset JF17K-4 --batch_size 128 --lr 0.1 --dr 0.1 --input_drop 0.1 --hidden_drop 0.1 --feature_drop 0.1 --k_size 1 --k_sizeN 2 --dil_size 2 --dil_sizeN 2
 
 ## WikiPeople-3 dataset
-python main-fixed3.py --dataset WikiPeople-3 --batch_size 256 --lr 0.00078 --dr 0.967 --input_drop 0.2 --dropout 0.2 --dropout_3d 0.9 --padding 5
+python main-fixed3.py --dataset WikiPeople-3 --batch_size 128 --lr 0.1 --dr 0.1 --input_drop 0.1 --hidden_drop 0.1 --feature_drop 0.1 --k_size 1 --k_sizeN 2 --dil_size 2 --dil_sizeN 2
 
 ## WikiPeople-4 dataset
-python main-fixed4.py --dataset WikiPeople-4 --batch_size 64 --lr 0.00094 --dr 0.909 --input_drop 0.2 --dropout 0.7 --dropout_3d 0.7 --padding 5
+python main-fixed4.py --dataset WikiPeople-4 --batch_size 128 --lr 0.1 --dr 0.1 --input_drop 0.1 --hidden_drop 0.1 --feature_drop 0.1 --k_size 1 --k_sizeN 2 --dil_size 2 --dil_sizeN 2
 ```
 
 
