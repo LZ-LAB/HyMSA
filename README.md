@@ -26,7 +26,7 @@ python main-JF.py --dataset JF17K --batch_size 128 --lr 0.1 --dr 0.1 --input_dro
 python main-WP.py --dataset WikiPeople --batch_size 128 --lr 0.1 --dr 0.1 --input_drop 0.1 --hidden_drop 0.1 --feature_drop 0.1 --k_size 1 --k_sizeN 2 --dil_size 2 --dil_sizeN 2
 
 ## FB-AUTO dataset
-python main-FB.py --dataset FB-AUTO --batch_size 128 --lr 0.1 --dr 0.1 --input_drop 0.1 --hidden_drop 0.1 --feature_drop 0.1 --k_size 1 --k_sizeN 2 --dil_size 2 --dil_sizeN 2
+python main-FB.py --dataset FB-AUTO --batch_size 128 --lr 0.00052 --dr 0.983 --input_drop 0.7 --hidden_drop 0.2 --feature_drop 0.6 --k_size 3 --k_sizeN 4 --dil_size 4 --dil_sizeN 3
 
 ## M-FB15K dataset
 python main-MK.py --dataset M-FB15K --batch_size 128 --lr 0.1 --dr 0.1 --input_drop 0.1 --hidden_drop 0.1 --feature_drop 0.1 --k_size 1 --k_sizeN 2 --dil_size 2 --dil_sizeN 2
